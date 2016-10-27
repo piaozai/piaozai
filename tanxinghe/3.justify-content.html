@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>弹性盒模型3</title>
+		<style>
+			#div1 {
+				width: 500px;
+				height: 400px;
+				border: 1px #000 solid;
+				margin: 20px auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+			
+			#div1 div {
+				background: red;
+				width: 100px;
+				height: 100px;
+				/*margin: 10px;*/
+			}
+			/*
+	flex-direction : 主轴排列方向(即项目的排列方向)
+		row(主轴为水平方向，起点在左端)
+		row-reverse(主轴为水平方向，起点在右端)
+		column(主轴为垂直方向，起点在上沿)
+		column-reverse(主轴为垂直方向，起点在下沿)
+	justify-content : 主轴对齐
+		flex-start : 起始位置
+		flex-end : 结束位置
+		center : 居中位置
+		space-between : 富余空间作为元素之间的间隔
+		space-around : 富余空间作为元素之间的间隔(端点也算富余空间了)
+	
+
+*/
+		</style>
+	</head>
+
+	<body>
+		<div id="div1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+
+		</div>
+	</body>
+
+</html>

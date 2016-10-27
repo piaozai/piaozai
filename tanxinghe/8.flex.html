@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>弹性盒模型8</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,body{
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			/*//水平方向的排列*/
+			/*#box{
+				width: 100%;
+				height: 100%;
+				background: whitesmoke;
+				display: flex;
+				flex-direction: row;
+			}
+			
+			
+			#div1{
+				width: 100px;
+				background: blue;
+			}
+			
+			#div2{
+				flex: 1;
+				background: yellow;
+			}
+			
+			#div3{
+				width: 100px;
+				background: red;
+			}*/
+			
+			/*//竖直方向排列的*/
+			#box{
+				width: 100%;
+				height: 100%;
+				background: whitesmoke;
+				display: flex;
+				flex-direction:column;
+			}
+			
+			
+			#div1{
+				height: 80px;
+				background: blue;
+			}
+			
+			#div2{
+				flex: 1;
+				background: yellow;
+				display: flex;
+			}
+			
+			#left,#right{
+				width: 100px;
+				background: powderblue;
+			}
+			#center{
+				flex: 1;
+				background: green;
+			}
+			
+			#div3{
+				height: 80px;
+				background: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<div id="div1">header</div>
+			<div id="div2">
+				<div id="left">
+					left
+				</div>
+				<div id="center">
+					center
+				</div>
+				<div id="right">
+					right
+				</div>
+			</div>
+			<div id="div3">footer</div>
+		</div>
+	</body>
+
+</html>
